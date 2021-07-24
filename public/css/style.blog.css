@@ -1,22 +1,25 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background-color: whitesmoke;
-};
-
-.header{
-   display:flex;
-   justify-content:;
-   align-items: ;
+* {
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+  };
   
-};
 
-footer{
-    display: flex;
-    height: 30px;
-};
-ul{
-   height: 30px;
+
+.materia p{
+
+ align-items: center;
 }
+ 
+  .icon-social {
+    width: 30px;
+    padding: 1px;
+
+  }
+
+  footer{
+      text-align: center;
+  }

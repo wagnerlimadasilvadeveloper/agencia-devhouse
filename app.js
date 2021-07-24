@@ -3,6 +3,9 @@ let app = express();
 app.listen(3030,()=>{
 
     app.use(express.static('public'));
+    app.use(express.urlencoded({ extended: false }));
+    app.use(express.json());
+
 
     app.get('/',(req,res)=>{
         res.sendFile(__dirname + "/views/home.html");
@@ -24,6 +27,16 @@ app.listen(3030,()=>{
         res.sendFile(__dirname + "/views/blog.html");
     
     });
+
+    app.get('/contato',(req,res)=>{
+        res.sendFile(__dirname + "/views/contato.html");
+    
+    });
+
+    app.post("/receber-contato", (req, res) => {
+        console.log(req.body);
+        res.send("Contato recebido por:" + req.body.nome);
+      });
  
     console.log("servidor rodando");
 });
