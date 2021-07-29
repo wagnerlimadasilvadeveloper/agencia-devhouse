@@ -8,6 +8,8 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-family: "Roboto";
   font-size: 20px;
+  background-color: #F2F9FF;
+  ;
 }
 
 .icon-social {
@@ -18,8 +20,9 @@ header {
   display: flex;
   justify-content: space-around;
   height: 80px;
-
   align-items: center;
+  
+
 }
 
 .menu a {
@@ -39,9 +42,89 @@ header {
   cursor: pointer;
 }
 
+
+
+main{
+  display: grid;
+  justify-items: center;
+  position:relative;
+  color:#1E266D;
+
+
+}
+
+main button{
+  position:relative;
+  background-color: #3751ff;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+ 
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+
+.botao-banner1{
+  margin:10px;
+  background-color: #3751ff;
+  position:relative;
+  right: 50px;
+  
+}
+
+.botao-banner2{
+  
+  background-color: cornsilk;
+  position:relative;
+  left:50px;
+  bottom:55px;
+  color:black;
+}
+
+.divisor{
+  text-align: center;
+}
+
+.drawkit{
+  margin:10px;
+  position:relative;
+  width: 95px;
+  height: 33px;
+  right: 300px;
+  
+}
+
+.cinemax{
+  margin:10px;
+  height: 33px;
+  right: 174px;
+  
+}
+
+.disney{
+  margin:10px;
+  position:relative;
+  left: 300px;
+  height: 33px;
+  right: 71px;
+  
+}
+
+.banner2{
+ font-size: 30px;
+ 
+}
+
+.chat{
+ 
+
+}
+
 #menu-mobile {
   display: none;
-}
+};
 
 @media (max-width: 465px) {
   .menu {
