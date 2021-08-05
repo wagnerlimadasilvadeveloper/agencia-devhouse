@@ -1,5 +1,6 @@
 const express = require ('express');
 const routes = express.Router();
+const depoimentos = require ("../models/depoimentos");
 const path = require ("path");
 
 
@@ -10,7 +11,8 @@ routes.get('/',(req,res)=>{
 
 
 routes.get('/home',(req,res)=>{
-    res.sendFile(path.resolve("views","home.html"));
+    res.render("home",{titulo:"Sua empresa vai ser incrivel!"})
+    /*res.sendFile(path.resolve("views","home.html"));*/
 
 });
 
@@ -26,6 +28,11 @@ routes.get('/blog',(req,res)=>{
 
 routes.get('/contato',(req,res)=>{
     res.sendFile(path.resolve("views","contato.html"));
+
+});
+
+routes.get('/depoimentos',(req,res)=>{
+    res.render("depoimentos",{depoimentos,titulo:"depoimentos"});
 
 });
 
