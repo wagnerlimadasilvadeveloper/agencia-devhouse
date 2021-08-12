@@ -2,12 +2,11 @@ const express = require ('express');
 const routes = express.Router();
 const depoimentos = require ("../models/depoimentos");
 const path = require ("path");
+const produtoController = require ("../controllers/produtoController");
+const indexController = require("../controllers/indexController");
 
 
-routes.get('/',(req,res)=>{
-    res.sendFile(__dirname + "/views/home.html");
-
-});
+routes.get('/', indexController.exibirHome);
 
 
 routes.get('/home',(req,res)=>{
